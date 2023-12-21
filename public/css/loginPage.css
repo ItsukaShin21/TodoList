@@ -1,0 +1,106 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(360deg, #08AEEA, #2AF598);
+}
+
+.mainContent {
+    display: flex;
+    width: 100vw;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+form label {
+    display: flex;
+    align-items: baseline;
+    width: 30%;
+    margin-bottom: 0.5%;
+}
+
+input {
+    width: 30%;
+    height: 30px;
+    margin-bottom: 1%;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    text-indent: 10px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline-color: #058aba;
+}
+
+input[type="password"] {
+    margin-bottom: 2%;
+}
+
+input[type="submit"] {
+    background: #058aba;
+    transition: background 0.3s ease-in-out;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #22aee0;
+}
+
+.registerRoute {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    margin-bottom: 1%;
+}
+
+a {
+    text-indent: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #064056;
+}
+
+footer {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+.success-message, .error-message {
+    margin-top: 1%;
+    display: flex;
+    position: absolute;
+    background: #22aee0;
+    justify-content: center;
+    padding: 1.5%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 12px;
+    font-weight: 500;
+    border: 3px solid #09bb6b;
+    border-radius: 10px;
+}
